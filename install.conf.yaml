@@ -1,0 +1,34 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+      glob: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.bashrc: bash/bashrc
+    ~/.inputrc: bash/inputrc
+    ~/.gitconfig: git/gitconfig
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.vimrc: vim/vimrc
+
+- create:
+    # - ~/Projects
+    - ~/bin
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [sudo apt update, Apt updating]
+  - [sudo apt upgrade -y, Apt upgrading]
+  - [sudo apt dist-upgrade -y, Apt dist upgrading]
+  - [pop-upgrade release update, Fetch the latest updates for the current release]
+  - [pop-upgrade release upgrade, Update the system, and fetch the packages for the next release]
+  - [sudo apt install bash-completion -y, Installing bash-completion]
+  - [sudo apt install gparted -y, Installing GParted]
+  - [sudo apt install nodejs npm -y, Installing nodejs npm]
+  - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Installing rustup]
+  - [sudo apt install code -y, Installing code]
+  - [source $HOME/.bashrc, Reload changes]

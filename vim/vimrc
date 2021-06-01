@@ -1,0 +1,29 @@
+syntax on
+colorscheme desert 
+
+set wrap
+set encoding=utf-8
+set number
+set relativenumber
+set linebreak
+set scrolloff=12
+set ruler 
+set clipboard=unnamed
+
+"Tabs
+""""""""""""""
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+
+"Indenting 
+"""""""""""""""
+set autoindent 
+set smartindent 
+
+
+"Search
+"""""""""""""""
+set incsearch
+set hlsearch
