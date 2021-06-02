@@ -1,0 +1,11 @@
+[user]
+	email = azz-eddine@users.noreply.github.com
+	name = azz-eddine
+#	signingkey = BEE13E9ED8A
+# [commit]
+# 	gpgsign = true
+# [filter "lfs"]
+# 	required = true
+# 	clean = git-lfs clean -- %f
+# 	smudge = git-lfs smudge -- %f
+# 	process = git-lfs filter-process
